@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-ducks/static/css/main.880478f0.css",
+    "main.js": "/react-ducks/static/js/main.95dc165d.js",
+    "static/media/frankie_green_glitter.jpg": "/react-ducks/static/media/frankie_green_glitter.e565fcb5671fe8732e79.jpg",
+    "static/media/outlaw.jpg": "/react-ducks/static/media/outlaw.3be1f365eed5b25c156e.jpg",
+    "static/media/munchkin_bath.jpg": "/react-ducks/static/media/munchkin_bath.b643f654f2b5ccd94284.jpg",
+    "static/media/fall_full_set_2025.jpg": "/react-ducks/static/media/fall_full_set_2025.e2c96ebe46ba93e4d441.jpg",
+    "static/media/spring_full_set_2025.jpg": "/react-ducks/static/media/spring_full_set_2025.5550c80cc788ccbb7a55.jpg",
+    "static/media/background.jpg": "/react-ducks/static/media/background.3ac91d0358af49f842c5.jpg",
+    "static/media/logo.jpg": "/react-ducks/static/media/logo.f323a90dfa576c946962.jpg",
+    "index.html": "/react-ducks/index.html",
+    "main.880478f0.css.map": "/react-ducks/static/css/main.880478f0.css.map",
+    "main.95dc165d.js.map": "/react-ducks/static/js/main.95dc165d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.880478f0.css",
+    "static/js/main.95dc165d.js"
+  ]
+}
