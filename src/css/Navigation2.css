@@ -1,0 +1,48 @@
+/*Smaller screens*/
+/* Main navigation */
+#main-nav2 ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+#main-nav2 a {
+    text-decoration: none;
+    color: var(--sixthary-color);
+    text-decoration: none;
+    background: var(--secondary-color);
+    padding: 10px;
+}
+#main-nav2 li {
+    text-align: center;
+    padding: 10px;
+}
+
+/*Hamburger menu*/
+#main-nav2 .hamburger {
+    cursor: pointer;
+    padding: 10px;
+    color: var(--sixthary-color);
+}
+
+/*Big screens*/
+@media only screen and (min-width: 768px) {
+    /*Columns*/
+    #main-nav2 .columns {
+        display: flex;
+    }
+    /* Main navigation */
+    #main-nav2 li {
+        flex: 1;
+    }
+    #main-nav2 li, #main-naver li:first-child {
+    border: none;
+    }
+    #main-nav2 a {
+    text-align: center;
+    padding: 10px;
+    }
+
+     /*Hamburger*/
+    #main-nav2 .hamburger {
+        display: none;
+    }
+}
