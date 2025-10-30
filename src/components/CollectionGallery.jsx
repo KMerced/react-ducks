@@ -12,7 +12,7 @@ const CollectionGallery = () => {
                     <section className="collection">
                         <h3>Ducks: 19</h3>
                         <img src={fall_full_set_2025}/>
-                        <Link to="/">All Ducks</Link>
+                        <Link to="/Allducks">All Ducks</Link>
                     </section>
                     <section className="collection">
                         <h3>Ducks: 12</h3>
