@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #F28705;
+    --secondary-color: #F29F05;
+    --thirdary-color: #F2B705;
+    --fourthary-color: #260B01;
+    --fifthary-color: #401E01;
+    --sixthary-color: #D93D04;
+}
+
+/* Brand nav */
+#brand-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+#brand-nav a {
+    text-decoration: none;
+    background: var(--secondary-color);
+    color: var(--sixthary-color);
+    padding: 10px 0;
+    display: block;
+}
+#brand-nav li {
+    text-align: center;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    #brand-nav .nav {
+        display: flex;
+    }
+
+       /* Brand nav */
+    #brand-nav li {
+        flex: 1;
+    }
+    #brand-nav li, #brand-nav li:first-child {
+    border: none;
+    }
+    #brand-nav a {
+    text-align: center;
+    padding: 10px;
+    }
+}

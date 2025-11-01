@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #F28705;
+    --secondary-color: #F29F05;
+    --thirdary-color: #F2B705;
+    --fourthary-color: #260B01;
+    --fifthary-color: #401E01;
+    --sixthary-color: #D93D04;
+}
+
+/*Small screens*/
+/* Brandducks items */
+#brandducks-main {
+    text-align: center;
+}
+.brand-ducks {
+    width: 95%;
+    background: var(--primary-color);
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+}
+.brand-ducks a {
+    text-align: center;
+    color: var(--sixthary-color);
+    text-decoration: none;
+    background: var(--secondary-color);
+    padding: 10px;
+}
+
+/* Columns */
+.columns {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+/*Big screens*/
+@media only screen and (min-width: 768px) {
+     .brand-ducks {
+        position: relative;
+    }
+    
+ .brand-ducks a {
+        width: 80%;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 0%;
+        left: 7%;
+    }
+
+    /* Columns */
+    .columns {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+
+/*Brand ducks */
+    .brand-ducks {
+        width: 20%;
+}
+}

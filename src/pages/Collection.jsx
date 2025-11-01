@@ -1,7 +1,7 @@
 import "./../css/Collection.css";
 import Header from "./../components/Header";
 import Footer from "./../components/Footer";
-import CollectionNav from "./../components/CollectionNav";
+import CollectionTopInfo from "./../components/CollectionTopInfo";
 
 const Collection = () => {
     return (
@@ -10,7 +10,7 @@ const Collection = () => {
 
             <title>The Full Collection</title>
 
-            <CollectionNav />
+            <CollectionTopInfo />
 
             <Footer />
         </div>

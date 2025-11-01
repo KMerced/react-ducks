@@ -3,7 +3,7 @@ import MainNav2 from "./../components/MainNav2";
 import CollectionGallery from "./../components/CollectionGallery";
 import BackButton from "./../components/BackButton";
 
-const CollectionNav = () => {
+const CollectionTopInfo = () => {
     return (
         <>
         <div id="collection-nav">
@@ -26,4 +26,4 @@ const CollectionNav = () => {
     )
 }
 
-export default CollectionNav;
+export default CollectionTopInfo;

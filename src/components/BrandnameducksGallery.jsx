@@ -1,59 +1,45 @@
-import "./../css/AllducksGallery.css";
+import "./../css/BrandnameducksGallery.css";
 import {Link} from "react-router-dom";
-import batman from "../css/images/batman.jpg";
 import beige_easter from "../css/images/beige_easter.jpg";
-import blue from "../css/images/blue.jpg";
 import butterfly from "../css/images/butterfly.jpg";
-import construction_worker from "../css/images/construction_worker.jpg";
 import fairy from "../css/images/fairy.jpg";
 import firefly from "../css/images/firefly.jpg";
 import football from "../css/images/football.jpg";
-import frankie_green_glitter from "../css/images/frankie_green_glitter.jpg";
 import mini_dovakiin from "../css/images/mini_dovakiin.jpg";
-import munchkin_bath from "../css/images/munchkin_bath.jpg";
-import outlaw from "../css/images/outlaw.jpg";
 import pink_glitter_witch from "../css/images/pink_glitter_witch.jpg";
 import pumpkin from "../css/images/pumpkin.jpg";
 import purple_with_green_bill from "../css/images/purple_with_green_bill.jpg";
 import scout from "../css/images/scout.jpg";
 import skeleton from "../css/images/skeleton.jpg";
-import witch from "../css/images/witch.jpg";
 import zombie from "../css/images/zombie.jpg";
 
 const ducks = [
-    {name: "Batman Duck", img: batman, link: "/"},
     {name: "Beige Easter Duck", img: beige_easter, link: "/"},
-    {name: "Blue Duck", img: blue, link: "/"},
     {name: "Butterfly Duck", img: butterfly, link: "/"},
-    {name: "Construction Worker Duck", img: construction_worker, link: "/"},
     {name: "Fairy Duck", img: fairy, link: "/"},
     {name: "Firefly Duck", img: firefly, link: "/"},
     {name: "Football Duck", img: football, link: "/"},
-    {name: "Frankie's Fun Park Green Glitter Duck", img: frankie_green_glitter, link: "/"},
     {name: "Mini Dovakiin Duck", img: mini_dovakiin, link: "/"},
-    {name: "Munchkin's Bath Duck", img: munchkin_bath, link: "/"},
-    {name: "Outlaw Duck", img: outlaw, link: "/"},
     {name: "Pink Glitter Witch Duck", img: pink_glitter_witch, link: "/"},
     {name: "Pumpkin Duck", img: pumpkin, link: "/"},
     {name: "Purple With Green Bill Duck", img: purple_with_green_bill, link: "/"},
     {name: "Scout Duck", img: scout, link: "/"},
     {name: "Skeleton Duck", img: skeleton, link: "/"},
-    {name: "Witch Duck", img: witch, link: "/"},
     {name: "Zombie Duck", img: zombie, link: "/"}
 ]
 
-const AllducksGallery = () => {
+const BrandnameducksGallery = () => {
     return (
-        <main id="all-ducks-main" className="columns">
+        <main id="brandducks-main" className="columns">
             {ducks.map((ducks) => (
-                <section class="all-ducks">
-                        <h3>{ducks.name}</h3>
-                        <img src={ducks.img}/>
-                        <Link to={ducks.link}>{ducks.name}</Link>
-                </section>
+                <section className="brand-ducks">
+                <h3>{ducks.name}</h3>
+                <img src={ducks.img}/>
+                <Link to={ducks.link}>{ducks.name}</Link>
+            </section>
             ))}
-                </main>
-    )
-};
+        </main>
+    ) 
+}
 
-export default AllducksGallery;
+export default BrandnameducksGallery;
