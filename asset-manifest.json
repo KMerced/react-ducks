@@ -1,20 +1,37 @@
 {
   "files": {
-    "main.css": "/react-ducks/static/css/main.880478f0.css",
-    "main.js": "/react-ducks/static/js/main.95dc165d.js",
+    "main.css": "/react-ducks/static/css/main.47aba2b4.css",
+    "main.js": "/react-ducks/static/js/main.82f0d072.js",
+    "static/media/construction_worker.jpg": "/react-ducks/static/media/construction_worker.f02cfe733c38b36d1e5b.jpg",
+    "static/media/batman.jpg": "/react-ducks/static/media/batman.05be3f09ef3ce23dc4be.jpg",
     "static/media/frankie_green_glitter.jpg": "/react-ducks/static/media/frankie_green_glitter.e565fcb5671fe8732e79.jpg",
+    "static/media/purple_with_green_bill.jpg": "/react-ducks/static/media/purple_with_green_bill.a62c0712cc4c93c7626e.jpg",
+    "static/media/blue.jpg": "/react-ducks/static/media/blue.bd0b3770cb1f77958d83.jpg",
     "static/media/outlaw.jpg": "/react-ducks/static/media/outlaw.3be1f365eed5b25c156e.jpg",
+    "static/media/beige_easter.jpg": "/react-ducks/static/media/beige_easter.38e3d126e4a727d7cb8f.jpg",
     "static/media/munchkin_bath.jpg": "/react-ducks/static/media/munchkin_bath.b643f654f2b5ccd94284.jpg",
+    "static/media/pumpkin.jpg": "/react-ducks/static/media/pumpkin.9244d2a27a100126fd06.jpg",
     "static/media/fall_full_set_2025.jpg": "/react-ducks/static/media/fall_full_set_2025.e2c96ebe46ba93e4d441.jpg",
+    "static/media/zombie.jpg": "/react-ducks/static/media/zombie.0903b3cdbb2ad0f74809.jpg",
+    "static/media/scout.jpg": "/react-ducks/static/media/scout.a7352653dbf60e536cd7.jpg",
+    "static/media/fairy.jpg": "/react-ducks/static/media/fairy.608a3a24e2b3551ac650.jpg",
+    "static/media/skeleton.jpg": "/react-ducks/static/media/skeleton.78f99899802eecbb56d0.jpg",
+    "static/media/mini_dovakiin.jpg": "/react-ducks/static/media/mini_dovakiin.2336d7db6f6f6a37d015.jpg",
+    "static/media/pink_glitter_witch.jpg": "/react-ducks/static/media/pink_glitter_witch.ad30e0c0e27f7a9eefb6.jpg",
+    "static/media/butterfly.jpg": "/react-ducks/static/media/butterfly.f8e29d9553dbadf27b03.jpg",
+    "static/media/football.jpg": "/react-ducks/static/media/football.c192b893d717ea8931f9.jpg",
+    "static/media/firefly.jpg": "/react-ducks/static/media/firefly.58619b935cb3da769640.jpg",
     "static/media/spring_full_set_2025.jpg": "/react-ducks/static/media/spring_full_set_2025.5550c80cc788ccbb7a55.jpg",
+    "static/media/witch.jpg": "/react-ducks/static/media/witch.92b400e890f3106ce654.jpg",
     "static/media/background.jpg": "/react-ducks/static/media/background.3ac91d0358af49f842c5.jpg",
+    "static/media/duckyalertlogo.jpg": "/react-ducks/static/media/duckyalertlogo.61744ef5ba5c11605048.jpg",
     "static/media/logo.jpg": "/react-ducks/static/media/logo.f323a90dfa576c946962.jpg",
     "index.html": "/react-ducks/index.html",
-    "main.880478f0.css.map": "/react-ducks/static/css/main.880478f0.css.map",
-    "main.95dc165d.js.map": "/react-ducks/static/js/main.95dc165d.js.map"
+    "main.47aba2b4.css.map": "/react-ducks/static/css/main.47aba2b4.css.map",
+    "main.82f0d072.js.map": "/react-ducks/static/js/main.82f0d072.js.map"
   },
   "entrypoints": [
-    "static/css/main.880478f0.css",
-    "static/js/main.95dc165d.js"
+    "static/css/main.47aba2b4.css",
+    "static/js/main.82f0d072.js"
   ]
 }
