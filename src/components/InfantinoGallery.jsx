@@ -1,7 +1,7 @@
 import "./../css/BrandnameducksGallery.css";
 import {Link} from "react-router-dom";
-import beige_easter from "../css/images/beige_easter.jpg";
-import purple_with_green_bill from "../css/images/purple_with_green_bill.jpg";
+import beige_easter from "../css/images/ducks/beige_easter.jpg";
+import purple_with_green_bill from "../css/images/ducks/purple_with_green_bill.jpg";
 
 const ducks = [
     {name: "Beige Easter Duck", img: beige_easter, link: "/"},

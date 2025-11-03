@@ -1,6 +1,6 @@
 import "./../css/BrandnameducksGallery.css";
 import {Link} from "react-router-dom";
-import mini_dovakiin from "../css/images/mini_dovakiin.jpg";
+import mini_dovakiin from "../css/images/ducks/mini_dovakiin.jpg";
 
 
 const ducks = [

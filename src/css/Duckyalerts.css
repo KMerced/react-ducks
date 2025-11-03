@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #F28705;
+    --secondary-color: #F29F05;
+    --thirdary-color: #F2B705;
+    --fourthary-color: #260B01;
+    --fifthary-color: #401E01;
+    --sixthary-color: #D93D04;
+}
+
+/*Small screens*/
+
+#alerts-nav {
+    width: 95%;
+    margin: auto;
+    background: var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#alerts-div {
+    background: var(--thirdary-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*Email address form*/
+#contact-form {
+    text-align: center;
+}

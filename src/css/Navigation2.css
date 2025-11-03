@@ -16,13 +16,6 @@
     padding: 10px;
 }
 
-/*Hamburger menu*/
-#main-nav2 .hamburger {
-    cursor: pointer;
-    padding: 10px;
-    color: var(--sixthary-color);
-}
-
 /*Big screens*/
 @media only screen and (min-width: 768px) {
     /*Columns*/

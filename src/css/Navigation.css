@@ -22,8 +22,13 @@
     background: var(--primary-color);
 }
 
+/*Hidden class*/
+.hide-small {
+    display:none;
+}
+
 /*Hamburger menu*/
-#main-nav .hamburger {
+.hamburger {
     cursor: pointer;
     padding: 10px;
     color: var(--sixthary-color);
@@ -49,5 +54,15 @@
     #main-nav a:hover {
         border-bottom: 1px solid var(--primary-color);
         background: var(--thirdary-color);
+    }
+
+    /*Hamburger*/
+    .hamburger {
+        display: none;
+    }
+
+    /*Hidden class*/
+    .hide-small {
+        display: block;
     }
 }

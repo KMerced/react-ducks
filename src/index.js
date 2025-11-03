@@ -19,6 +19,7 @@ root.render(
       <Routes>
         <Route path="/" element ={<Home/>}/>
         <Route path="Collection" element ={<Collection/>}/>
+        <Route path="Duckyalerts" element ={<Duckyalerts/>}/>
         <Route path="Allducks" element ={<Allducks/>}/>
         <Route path="BrandnameDucks" element ={<BrandnameDucks/>}/>
         <Route path="BullseyesPlayground" element ={<BullseyesPlayground/>}/>
