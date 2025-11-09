@@ -20,6 +20,7 @@ root.render(
         <Route path="/" element ={<Home/>}/>
         <Route path="Collection" element ={<Collection/>}/>
         <Route path="Duckyalerts" element ={<Duckyalerts/>}/>
+        <Route path="Favoriteducks" element ={<Favoriteducks/>}/>
         <Route path="Allducks" element ={<Allducks/>}/>
         <Route path="BrandnameDucks" element ={<BrandnameDucks/>}/>
         <Route path="BullseyesPlayground" element ={<BullseyesPlayground/>}/>

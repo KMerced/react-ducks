@@ -46,7 +46,7 @@ const AllducksGallery = () => {
     return (
         <main id="all-ducks-main" className="columns">
             {ducks.map((ducks) => (
-                <section class="all-ducks">
+                <section className="all-ducks">
                         <h3>{ducks.name}</h3>
                         <img src={ducks.img}/>
                         <Link to={ducks.link}>{ducks.name}</Link>
