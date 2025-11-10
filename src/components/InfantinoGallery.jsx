@@ -4,8 +4,8 @@ import beige_easter from "../css/images/ducks/beige_easter.jpg";
 import purple_with_green_bill from "../css/images/ducks/purple_with_green_bill.jpg";
 
 const ducks = [
-    {name: "Beige Easter Duck", img: beige_easter, link: "/"},
-    {name: "Purple With Green Bill Duck", img: purple_with_green_bill, link: "/"},
+    {name: "Beige Easter Duck", img: beige_easter, link: "/Duckpage"},
+    {name: "Purple With Green Bill Duck", img: purple_with_green_bill, link: "/Duckpage"},
 ]
 
 const InfantinoGallery = () => {

@@ -4,7 +4,7 @@ import mini_dovakiin from "../css/images/ducks/mini_dovakiin.jpg";
 
 
 const ducks = [
-    {name: "Mini Dovakiin Duck", img: mini_dovakiin, link: "/"}
+    {name: "Mini Dovakiin Duck", img: mini_dovakiin, link: "/Duckpage"}
 ]
 
 const TubbzGallery = () => {

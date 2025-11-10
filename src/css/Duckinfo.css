@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #F28705;
+    --secondary-color: #F29F05;
+    --thirdary-color: #F2B705;
+    --fourthary-color: #260B01;
+    --fifthary-color: #401E01;
+    --sixthary-color: #D93D04;
+}
+
+/*Small screens*/
+
+/* Duck info borders for small screens only */
+@media (max-width: 768px) {
+#title {
+    border: 1px solid var(--thirdary-color);
+}
+#nav {
+    border: 1px solid var(--thirdary-color);
+}
+#image {
+    border: 1px solid var(--thirdary-color);
+}
+#basic-info {
+    border: 1px solid var(--thirdary-color);
+}
+#story {
+    border: 1px solid var(--thirdary-color);
+}
+}
+
+/*Big screens*/
+@media only screen and (min-width: 768px) {
+    .duck-stuff {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 40px;
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid var(--thirdary-color);
+    }
+    .duck-info {
+        flex: 1;
+        padding: 20px;
+        border-left: 1px solid var(--thirdary-color);
+    }
+
+    /* Images */
+    #image {
+        flex: 1;
+    }
+    #image img {
+        width: 500px;
+        height: 500px;
+        border-radius: 8px;
+    }
+
+    /* Information stuff */
+    #basic-info {
+        flex: 1;
+        text-align: center;
+        border-bottom: 1px solid var(--thirdary-color);
+    }
+    #story {
+        flex: 1;
+        text-align: center;
+    }
+}

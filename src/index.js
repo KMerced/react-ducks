@@ -11,6 +11,7 @@ import BrandnameDucks from './pages/BrandnameDucks';
 import BullseyesPlayground from './pages/BullseyesPlayground';
 import Infantino from './pages/Infantino';
 import TubbzCosplayingDucks from './pages/TubbzCosplayingDucks';
+import Duckpage from './pages/Duckpage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,6 +27,7 @@ root.render(
         <Route path="BullseyesPlayground" element ={<BullseyesPlayground/>}/>
         <Route path="Infantino" element ={<Infantino/>}/>
         <Route path="Tubbz" element ={<TubbzCosplayingDucks/>}/>
+        <Route path="Duckpage" element ={<Duckpage/>}/>
       </Routes>
     </BrowserRouter>
 );

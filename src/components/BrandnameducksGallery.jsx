@@ -14,18 +14,18 @@ import skeleton from "../css/images/ducks/skeleton.jpg";
 import zombie from "../css/images/ducks/zombie.jpg";
 
 const ducks = [
-    {name: "Beige Easter Duck", img: beige_easter, link: "/"},
-    {name: "Butterfly Duck", img: butterfly, link: "/"},
-    {name: "Fairy Duck", img: fairy, link: "/"},
-    {name: "Firefly Duck", img: firefly, link: "/"},
-    {name: "Football Duck", img: football, link: "/"},
-    {name: "Mini Dovakiin Duck", img: mini_dovakiin, link: "/"},
-    {name: "Pink Glitter Witch Duck", img: pink_glitter_witch, link: "/"},
-    {name: "Pumpkin Duck", img: pumpkin, link: "/"},
-    {name: "Purple With Green Bill Duck", img: purple_with_green_bill, link: "/"},
-    {name: "Scout Duck", img: scout, link: "/"},
-    {name: "Skeleton Duck", img: skeleton, link: "/"},
-    {name: "Zombie Duck", img: zombie, link: "/"}
+    {name: "Beige Easter Duck", img: beige_easter, link: "/Duckpage"},
+    {name: "Butterfly Duck", img: butterfly, link: "/Duckpage"},
+    {name: "Fairy Duck", img: fairy, link: "/Duckpage"},
+    {name: "Firefly Duck", img: firefly, link: "/Duckpage"},
+    {name: "Football Duck", img: football, link: "/Duckpage"},
+    {name: "Mini Dovakiin Duck", img: mini_dovakiin, link: "/Duckpage"},
+    {name: "Pink Glitter Witch Duck", img: pink_glitter_witch, link: "/Duckpage"},
+    {name: "Pumpkin Duck", img: pumpkin, link: "/Duckpage"},
+    {name: "Purple With Green Bill Duck", img: purple_with_green_bill, link: "/Duckpage"},
+    {name: "Scout Duck", img: scout, link: "/Duckpage"},
+    {name: "Skeleton Duck", img: skeleton, link: "/Duckpage"},
+    {name: "Zombie Duck", img: zombie, link: "/Duckpage"}
 ]
 
 const BrandnameducksGallery = () => {

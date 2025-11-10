@@ -21,25 +21,25 @@ import witch from "../css/images/ducks/witch.jpg";
 import zombie from "../css/images/ducks/zombie.jpg";
 
 const ducks = [
-    {name: "Batman Duck", img: batman, link: "/"},
-    {name: "Beige Easter Duck", img: beige_easter, link: "/"},
-    {name: "Blue Duck", img: blue, link: "/"},
-    {name: "Butterfly Duck", img: butterfly, link: "/"},
-    {name: "Construction Worker Duck", img: construction_worker, link: "/"},
-    {name: "Fairy Duck", img: fairy, link: "/"},
-    {name: "Firefly Duck", img: firefly, link: "/"},
-    {name: "Football Duck", img: football, link: "/"},
-    {name: "Frankie's Fun Park Green Glitter Duck", img: frankie_green_glitter, link: "/"},
-    {name: "Mini Dovakiin Duck", img: mini_dovakiin, link: "/"},
-    {name: "Munchkin's Bath Duck", img: munchkin_bath, link: "/"},
-    {name: "Outlaw Duck", img: outlaw, link: "/"},
-    {name: "Pink Glitter Witch Duck", img: pink_glitter_witch, link: "/"},
-    {name: "Pumpkin Duck", img: pumpkin, link: "/"},
-    {name: "Purple With Green Bill Duck", img: purple_with_green_bill, link: "/"},
-    {name: "Scout Duck", img: scout, link: "/"},
-    {name: "Skeleton Duck", img: skeleton, link: "/"},
-    {name: "Witch Duck", img: witch, link: "/"},
-    {name: "Zombie Duck", img: zombie, link: "/"}
+    {name: "Batman Duck", img: batman, link: "/Duckpage"},
+    {name: "Beige Easter Duck", img: beige_easter, link: "/Duckpage"},
+    {name: "Blue Duck", img: blue, link: "/Duckpage"},
+    {name: "Butterfly Duck", img: butterfly, link: "/Duckpage"},
+    {name: "Construction Worker Duck", img: construction_worker, link: "/Duckpage"},
+    {name: "Fairy Duck", img: fairy, link: "/Duckpage"},
+    {name: "Firefly Duck", img: firefly, link: "/Duckpage"},
+    {name: "Football Duck", img: football, link: "/Duckpage"},
+    {name: "Frankie's Fun Park Green Glitter Duck", img: frankie_green_glitter, link: "/Duckpage"},
+    {name: "Mini Dovakiin Duck", img: mini_dovakiin, link: "/Duckpage"},
+    {name: "Munchkin's Bath Duck", img: munchkin_bath, link: "/Duckpage"},
+    {name: "Outlaw Duck", img: outlaw, link: "/Duckpage"},
+    {name: "Pink Glitter Witch Duck", img: pink_glitter_witch, link: "/Duckpage"},
+    {name: "Pumpkin Duck", img: pumpkin, link: "/Duckpage"},
+    {name: "Purple With Green Bill Duck", img: purple_with_green_bill, link: "/Duckpage"},
+    {name: "Scout Duck", img: scout, link: "/Duckpage"},
+    {name: "Skeleton Duck", img: skeleton, link: "/Duckpage"},
+    {name: "Witch Duck", img: witch, link: "/Duckpage"},
+    {name: "Zombie Duck", img: zombie, link: "/Duckpage"}
 ]
 
 const AllducksGallery = () => {
