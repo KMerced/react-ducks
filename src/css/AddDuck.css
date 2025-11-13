@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #F28705;
+    --secondary-color: #F29F05;
+    --thirdary-color: #F2B705;
+    --fourthary-color: #260B01;
+    --fifthary-color: #401E01;
+    --sixthary-color: #D93D04;
+}
+
+/*Small screens*/
+#add-duck-form {
+    width: 95%;
+    background: var(--sixthary-color);
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+/*Close dialog button thing*/
+#dialog-close {
+    cursor: pointer;
+}
+
+/*Typography*/
+p {
+    text-align: center;
+}

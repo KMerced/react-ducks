@@ -30,6 +30,13 @@
     flex-direction: column;
 }
 
+ /*Duck button*/
+    #duck-button {
+        display: block;
+        margin: auto;
+        padding: 5px;
+    }
+
 /*Typography*/
 .all-ducks a {
     color: var(--sixthary-color);

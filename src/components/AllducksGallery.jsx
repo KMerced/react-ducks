@@ -1,5 +1,6 @@
 import "./../css/AllducksGallery.css";
 import {Link} from "react-router-dom";
+import {useState, useEffect} from "react";
 import batman from "../css/images/ducks/batman.jpg";
 import beige_easter from "../css/images/ducks/beige_easter.jpg";
 import blue from "../css/images/ducks/blue.jpg";
@@ -19,6 +20,7 @@ import scout from "../css/images/ducks/scout.jpg";
 import skeleton from "../css/images/ducks/skeleton.jpg";
 import witch from "../css/images/ducks/witch.jpg";
 import zombie from "../css/images/ducks/zombie.jpg";
+import AddDuck from "./AddDuck";
 
 const ducks = [
     {name: "Batman Duck", img: batman, link: "/Duckpage"},
@@ -43,16 +45,35 @@ const ducks = [
 ]
 
 const AllducksGallery = () => {
+
+    const [duck, setDuck] = useState([]);
+    const [showAddDialog, setShowAddDialog] = useState(false);
+    
+    const openAddDialog = () => {
+        setShowAddDialog(true);
+    }
+    const closeAddDialog = () => {
+        setShowAddDialog(false);
+    }
+
     return (
-        <main id="all-ducks-main" className="columns">
-            {ducks.map((ducks) => (
-                <section className="all-ducks">
+        <>
+            <button id="duck-button" onClick={openAddDialog}>Click here to add a duck!</button>
+            {showAddDialog?(<AddDuck 
+                                closeAddDialog={closeAddDialog} 
+                                // updateHouses={updateHouses}
+                                /> ): ("")}
+
+            <main id="all-ducks-main" className="columns">
+                {ducks.map((ducks) => (
+                    <section className="all-ducks">
                         <h3>{ducks.name}</h3>
                         <img src={ducks.img}/>
                         <Link to={ducks.link}>{ducks.name}</Link>
-                </section>
-            ))}
-                </main>
+                    </section>
+                ))}
+            </main>
+        </>
     )
 };
 
