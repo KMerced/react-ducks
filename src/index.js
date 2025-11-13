@@ -8,6 +8,8 @@ import Duckyalerts from "./pages/Duckyalerts";
 import Favoriteducks from "./pages/Favoriteducks";
 import Allducks from "./pages/Allducks";
 import BrandnameDucks from './pages/BrandnameDucks';
+import Jumboducks from './pages/Jumboducks';
+import Noveltyducks from './pages/Noveltyducks';
 import BullseyesPlayground from './pages/BullseyesPlayground';
 import Infantino from './pages/Infantino';
 import TubbzCosplayingDucks from './pages/TubbzCosplayingDucks';
@@ -24,6 +26,8 @@ root.render(
         <Route path="Favoriteducks" element ={<Favoriteducks/>}/>
         <Route path="Allducks" element ={<Allducks/>}/>
         <Route path="BrandnameDucks" element ={<BrandnameDucks/>}/>
+        <Route path="Jumboducks" element ={<Jumboducks/>}/>
+        <Route path="Noveltyducks" element ={<Noveltyducks/>}/>
         <Route path="BullseyesPlayground" element ={<BullseyesPlayground/>}/>
         <Route path="Infantino" element ={<Infantino/>}/>
         <Route path="Tubbz" element ={<TubbzCosplayingDucks/>}/>

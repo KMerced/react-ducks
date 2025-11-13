@@ -31,8 +31,8 @@ const CollectionGallery = () => {
 const ducks = [
   {collection: "All Ducks",ducks: 19,img: images[slideIndex],link: "/Allducks"},
   {collection: "Brand Name Ducks",ducks: 12,img: spring_full_set_2025,link: "/BrandnameDucks"},
-  {collection: "Jumbo Ducks",ducks: 1,img: frankies_green_glitter,link: "/"},
-  {collection: "Novelty Ducks",ducks: 5,img: outlaw,link: "/"},
+  {collection: "Jumbo Ducks",ducks: 1,img: frankies_green_glitter,link: "/Jumboducks"},
+  {collection: "Novelty Ducks",ducks: 5,img: outlaw,link: "/Noveltyducks"},
   {collection: "Misc. Ducks",ducks: 1,img: munchkin_bath,link: "/"},
 ];
 

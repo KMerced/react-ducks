@@ -46,7 +46,7 @@ const ducks = [
 
 const AllducksGallery = () => {
 
-    const [duck, setDuck] = useState([]);
+    const [setDuck] = useState([]);
     const [showAddDialog, setShowAddDialog] = useState(false);
     
     const openAddDialog = () => {
@@ -55,14 +55,17 @@ const AllducksGallery = () => {
     const closeAddDialog = () => {
         setShowAddDialog(false);
     }
+    const updateDucks = (duck) => {
+        //Give a list, break up the list, then add to the list
+        setDuck((ducks)=>[...ducks,duck]);
+    }
 
     return (
         <>
             <button id="duck-button" onClick={openAddDialog}>Click here to add a duck!</button>
             {showAddDialog?(<AddDuck 
                                 closeAddDialog={closeAddDialog} 
-                                // updateHouses={updateHouses}
-                                /> ): ("")}
+                                updateDucks/> ): ("")}
 
             <main id="all-ducks-main" className="columns">
                 {ducks.map((ducks) => (

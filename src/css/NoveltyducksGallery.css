@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #F28705;
+    --secondary-color: #F29F05;
+    --thirdary-color: #F2B705;
+    --fourthary-color: #260B01;
+    --fifthary-color: #401E01;
+    --sixthary-color: #D93D04;
+}
+
+/*Small screens*/
+/* Novelty ducks items */
+#noveltyducks-main {
+    text-align: center;
+}
+.novelty-ducks {
+    width: 95%;
+    background: var(--primary-color);
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+}
+.novelty-ducks a {
+    text-align: center;
+    color: var(--sixthary-color);
+    text-decoration: none;
+    background: var(--secondary-color);
+    padding: 10px;
+}
+
+/*Big screens*/
+@media only screen and (min-width: 768px) {
+    .novelty-ducks {
+        width: 20%;
+        position: relative;
+    }
+    .columns {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+    .novelty-ducks a {
+        width: 80%;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 0%;
+        left: 7%;
+    }
+}

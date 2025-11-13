@@ -8,17 +8,35 @@
 }
 
 /*Small screens*/
-#add-duck-form {
+.w3-modal-content {
     width: 95%;
-    background: var(--sixthary-color);
-    padding: 5px;
+    background: var(--secondary-color);
+    padding: 10px;
     border-radius: 5px;
     margin: auto;
+}
+.w3-container {
+    width: 95%;
+    background: var(--thirdary-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.w3-container {
+    position: relative;
 }
 
 /*Close dialog button thing*/
 #dialog-close {
     cursor: pointer;
+    background: var(--primary-color);
+    color: var(--sixthary-color);
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    left: 1%;
+    top: 1%;
 }
 
 /*Typography*/
