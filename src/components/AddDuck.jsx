@@ -4,6 +4,31 @@ import React, {useState} from "react";
 const AddDuck = (props) => {
     const [result, setResult] = useState("");
     const [prevSrc, setPrevSrc] = useState("");
+    const [step2, setStep2] = useState(false);
+    const [step3, setStep3] = useState(false);
+    const [step4, setStep4] = useState(false);
+    const [step5, setStep5] = useState(false);
+    const [step6, setStep6] = useState(false);
+    const [step7, setStep7] = useState(false);
+
+    const FirstNextButton = () => {
+        setStep2(true);
+    }
+    const SecondNextButton = () => {
+        setStep3(true);
+    }
+    const ThirdNextButton = () => {
+        setStep4(true);
+    }
+    const FourthNextButton = () => {
+        setStep5(true);
+    }
+    const FifthNextButton = () => {
+        setStep6(true);
+    }
+    const SixthNextButton = () => {
+        setStep7(true);
+    }
 
     const uploadImage = (event) => {
         setPrevSrc(URL.createObjectURL(event.target.files[0]));
@@ -16,16 +41,20 @@ const AddDuck = (props) => {
         const formData = new FormData(event.target);
         console.log(...formData);
         
-        const response = await fetch("http://localhost:3002/api/ducks", {
+        const response = await fetch("https://ducks-server.onrender.com/api/ducks", {
             "method":"POST",
             "body":formData
         });
 
         if(response.status == 200){
             setResult("Duck added!");
-            event.target.reset();
-            props.closeAddDialog();
-            props.updateHouses(await response.json());
+
+            //Put a timeout method here so that it shows the message that the duck was added, then close everything out.
+            setTimeout(() => {
+                event.target.reset();
+                props.closeAddDialog();
+            }, 5000);
+
         } else {
             setResult("Something went wrong! Please try again later.");
         }
@@ -39,7 +68,7 @@ const AddDuck = (props) => {
                     <form id="add-duck-form" onSubmit={addToServer}>
                         <h3>Add A New Duck</h3>
 
-                        <section className="columns">
+                            <section className="columns">
                             <div>
                                 <p id="img-prev-section">
                                     {prevSrc!=""?
@@ -51,42 +80,48 @@ const AddDuck = (props) => {
                             <p id="img-upload">
                                 <p><label htmlFor="img">What does the duck look like?:</label></p>
                                 <input type="file" id="img" name="img" accept="image/*" onChange={uploadImage} />
+                                <button type="button" onClick={FirstNextButton} className="next-button">Next</button>
                             </p>
                         </section>
 
-                        <p>
+                        <p className={step2?"":"hidden"}>
                             <p><label htmlFor="name">What is the duck's name?:</label></p>
                             <input type="text" id="name" name="name" required min="1"></input>
+                            <button type="button" onClick={SecondNextButton} className="next-button">Next</button>
                         </p>
 
-                        <p>
+                        <p className={step3?"":"hidden"}>
                             <p><label htmlFor="type">What type of duck is it?:</label></p>
                             <input type="text" id="type" name="type" min="1" required></input>
+                            <button type="button" onClick={ThirdNextButton} className="next-button">Next</button>
                         </p>
 
-                        <p>
+                        <p className={step4?"":"hidden"}>
                             <p><label htmlFor="brand">What brand is it from, if any?:</label></p>
                             <input type="text" id="brand" name="brand" min="1" required></input>
+                            <button type="button" onClick={FourthNextButton} className="next-button">Next</button>
                         </p>
 
-                        <p>
+                        <p className={step5?"":"hidden"}>
                             <p><label htmlFor="line">What line is the duck from, if any?:</label></p>
                             <input type="text" id="line" name="line" min="1" required></input>
+                            <button type="button" onClick={FifthNextButton} className="next-button">Next</button>
                         </p>
 
-                         <p>
+                         <p className={step6?"":"hidden"}>
                             <p><label htmlFor="date">When did you get this duck?:</label></p>
-                            <p>Format the date like this:</p>
+                            <p>Format the date like this (please):</p>
                             <p>xx/xx/xxxx</p>
                             <input type="text" id="date" name="date" min="10" required></input>
+                            <button type="button" onClick={SixthNextButton} className="next-button">Next</button>
                         </p>
 
-                         <p>
+                         <p className={step7?"":"hidden"}>
                             <p><label htmlFor="story">What's the story surrounding this duck?:</label></p>
                             <input type="text" id="story" name="story" min="1" required></input>
                         </p>
 
-                        <p>
+                        <p className={step7?"":"hidden"}>
                             <button type="submit">Add duck</button>
                         </p>
                         <p>{result}</p>

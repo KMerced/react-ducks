@@ -39,6 +39,17 @@
     top: 1%;
 }
 
+/*Hidden class*/
+.hidden {
+    display: none;
+}
+
+/*Next buttons*/
+.next-button {
+    display: block;
+    margin: auto;
+}
+
 /*Typography*/
 p {
     text-align: center;

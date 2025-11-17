@@ -18,9 +18,9 @@ const Duckinfo = ({duck}) => {
             <div className="duck-info">
                 <div id="basic-info">
                     <h3>Basic Information:</h3>
-                    <p id="brand">{ducks.brand}</p>
-                    <p id="line">{ducks.line}</p>
-                    <p id="date">{ducks.date}</p>
+                    <p id="brand">Brand: {ducks.brand}</p>
+                    <p id="line">Line: {ducks.line}</p>
+                    <p id="date">Date Obtained: {ducks.date}</p>
                 </div>
 
                 <div id="story">
