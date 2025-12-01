@@ -1,21 +1,17 @@
-import {useState, useEffect} from "react";
-import axios from "axios";
 import "./../css/Duckinfo.css";
 
-const Duckimage = ({}) => {
-    const [ducks, setDucks] = useState([]);
+const Duckimage = ({duck}) => {
+        if(!duck) {
+        //This prevents the page from killing itself because it won't have the image immediately, the page will give errors about the image being null otherwise
+        return (
+        
+        <p>Loading duck image, please wait...</p>
 
-    useEffect(()=>{
-        const loadDucks = async() => {
-            const response = await axios.get("https://ducks-server.onrender.com/api/ducks/");
-            setDucks(response.data[0]);
-        };
-
-        loadDucks();
-    },[]);
+        )
+    }
     return (
             <div id="image">
-                <img id="img" src={`https://ducks-server.onrender.com/${ducks.img}`}/>
+                <img id="img" src={`https://ducks-server.onrender.com/${duck.img}`}/>
             </div>
     )
 };

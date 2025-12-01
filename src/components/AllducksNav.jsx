@@ -1,4 +1,3 @@
-import "./../css/AllducksNav.css"
 import MainNav2 from "./../components/MainNav2";
 
 const AllducksNav = () => {

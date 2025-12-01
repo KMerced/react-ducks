@@ -1,4 +1,3 @@
-import "./../css/Collectionnav.css";
 import MainNav2 from "./../components/MainNav2";
 import CollectionGallery from "./../components/CollectionGallery";
 import BackButton from "./../components/BackButton";

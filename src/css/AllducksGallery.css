@@ -18,6 +18,7 @@
     padding: 5px;
     border-radius: 5px;
     margin: auto;
+    position: relative;
 }
 .all-ducks a {
     text-align: center;
@@ -37,6 +38,14 @@
         padding: 5px;
     }
 
+    /*Delete duck button*/
+        #delete-button {
+            position: absolute;
+            top: 2%;
+            left: 1%;
+        }
+
+
 /*Typography*/
 .all-ducks a {
     color: var(--sixthary-color);
@@ -49,7 +58,6 @@
 @media only screen and (min-width: 768px) {
 .all-ducks {
         width: 20%;
-        position: relative;
 }
     .columns {
         display: flex;

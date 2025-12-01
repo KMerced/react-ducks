@@ -31,7 +31,7 @@ root.render(
         <Route path="BullseyesPlayground" element ={<BullseyesPlayground/>}/>
         <Route path="Infantino" element ={<Infantino/>}/>
         <Route path="Tubbz" element ={<TubbzCosplayingDucks/>}/>
-        <Route path="Duckpage" element ={<Duckpage/>}/>
+        <Route path="Duckpage/:duckID" element ={<Duckpage/>}/>
       </Routes>
     </BrowserRouter>
 );
