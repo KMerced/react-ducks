@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-ducks/static/css/main.4acf8ef4.css",
-    "main.js": "/react-ducks/static/js/main.f99f5c46.js",
+    "main.css": "/react-ducks/static/css/main.4868b30d.css",
+    "main.js": "/react-ducks/static/js/main.8ba3dd3c.js",
     "static/media/construction_worker.jpg": "/react-ducks/static/media/construction_worker.f02cfe733c38b36d1e5b.jpg",
     "static/media/batman.jpg": "/react-ducks/static/media/batman.05be3f09ef3ce23dc4be.jpg",
     "static/media/frankie_green_glitter.jpg": "/react-ducks/static/media/frankie_green_glitter.e565fcb5671fe8732e79.jpg",
@@ -27,11 +27,11 @@
     "static/media/duckyalertlogo.jpg": "/react-ducks/static/media/duckyalertlogo.61744ef5ba5c11605048.jpg",
     "static/media/logo.jpg": "/react-ducks/static/media/logo.f323a90dfa576c946962.jpg",
     "index.html": "/react-ducks/index.html",
-    "main.4acf8ef4.css.map": "/react-ducks/static/css/main.4acf8ef4.css.map",
-    "main.f99f5c46.js.map": "/react-ducks/static/js/main.f99f5c46.js.map"
+    "main.4868b30d.css.map": "/react-ducks/static/css/main.4868b30d.css.map",
+    "main.8ba3dd3c.js.map": "/react-ducks/static/js/main.8ba3dd3c.js.map"
   },
   "entrypoints": [
-    "static/css/main.4acf8ef4.css",
-    "static/js/main.f99f5c46.js"
+    "static/css/main.4868b30d.css",
+    "static/js/main.8ba3dd3c.js"
   ]
 }
