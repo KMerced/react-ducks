@@ -11,7 +11,7 @@ import "./../css/Duckinfo.css";
 
 const Duckpage = () => {
     const{duckID} = useParams();
-    const [duck,setDuck] = useState("");
+    const [duck,setDuck] = useState(null);
     const [showEditDialog, setShowEditDialog] = useState(false);
     const openEditDialog = () => {
         setShowEditDialog(true);
@@ -34,6 +34,15 @@ const Duckpage = () => {
         };
         loadSpecificDuck();
     },[duckID]);
+
+    if(!duck) {
+        return (
+            <div>
+                <p>Loading duck info, please wait...</p>
+            </div>
+        )
+    }
+
     return (
         <>
             <title>Duck Info Page</title>

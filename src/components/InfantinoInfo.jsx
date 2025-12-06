@@ -13,6 +13,8 @@ const InfantinoInfo = () => {
                 <MainNav2/>
             <h2>Brand Navigation</h2>
                 <Brandnavigation/>
+
+            <h2>Adding Ducks</h2>
         </>
     )
 }

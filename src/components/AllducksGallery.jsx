@@ -10,12 +10,11 @@ const AllducksGallery = (props) => {
     const [showAddDialog, setShowAddDialog] = useState(false);
     const [showDeleteDialog, setShowDeleteDialog] = useState(false);
     const [ducks,setDucks] = useState([]);
-    const [deleteDuck,setDeleteDuck] = useState(null);
+    const [deleteDuck,setDeleteDuck] = useState("");
 
     useEffect(()=> {
     const loadDucks = async() => {
         const response = await axios.get("https://ducks-server.onrender.com/api/ducks/");
-
         setDucks(response.data.slice(0,props.num));
     };
 

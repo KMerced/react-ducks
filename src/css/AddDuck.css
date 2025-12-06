@@ -83,3 +83,6 @@
 p {
     text-align: center;
 }
+textarea {
+    width: 100%;
+}

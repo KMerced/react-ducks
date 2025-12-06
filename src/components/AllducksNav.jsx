@@ -9,7 +9,7 @@ const AllducksNav = () => {
                 <h2>Main Navigation</h2>
                 <MainNav2 />
 
-                <h2>Adding & Removing Ducks</h2>
+                <h2>Adding Ducks</h2>
 
 
         </>

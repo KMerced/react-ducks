@@ -1,44 +1,69 @@
 import "./../css/BrandnameducksGallery.css";
 import {Link} from "react-router-dom";
-import beige_easter from "../css/images/ducks/beige_easter.jpg";
-import butterfly from "../css/images/ducks/butterfly.jpg";
-import fairy from "../css/images/ducks/fairy.jpg";
-import firefly from "../css/images/ducks/firefly.jpg";
-import football from "../css/images/ducks/football.jpg";
-import mini_dovakiin from "../css/images/ducks/mini_dovakiin.jpg";
-import pink_glitter_witch from "../css/images/ducks/pink_glitter_witch.jpg";
-import pumpkin from "../css/images/ducks/pumpkin.jpg";
-import purple_with_green_bill from "../css/images/ducks/purple_with_green_bill.jpg";
-import scout from "../css/images/ducks/scout.jpg";
-import skeleton from "../css/images/ducks/skeleton.jpg";
-import zombie from "../css/images/ducks/zombie.jpg";
+import {useState, useEffect} from "react";
+import axios from "axios";
+import AddDuck from "./AddDuck";
+import RemoveDuck from "./RemoveDuck";
 
-const ducks = [
-    {name: "Beige Easter Duck", img: beige_easter, link: "/Duckpage"},
-    {name: "Butterfly Duck", img: butterfly, link: "/Duckpage"},
-    {name: "Fairy Duck", img: fairy, link: "/Duckpage"},
-    {name: "Firefly Duck", img: firefly, link: "/Duckpage"},
-    {name: "Football Duck", img: football, link: "/Duckpage"},
-    {name: "Mini Dovakiin Duck", img: mini_dovakiin, link: "/Duckpage"},
-    {name: "Pink Glitter Witch Duck", img: pink_glitter_witch, link: "/Duckpage"},
-    {name: "Pumpkin Duck", img: pumpkin, link: "/Duckpage"},
-    {name: "Purple With Green Bill Duck", img: purple_with_green_bill, link: "/Duckpage"},
-    {name: "Scout Duck", img: scout, link: "/Duckpage"},
-    {name: "Skeleton Duck", img: skeleton, link: "/Duckpage"},
-    {name: "Zombie Duck", img: zombie, link: "/Duckpage"}
-]
+const BrandnameducksGallery = (props) => {
 
-const BrandnameducksGallery = () => {
+    const [showAddDialog, setShowAddDialog] = useState(false);
+    const [showDeleteDialog, setShowDeleteDialog] = useState(false);
+    const [ducks,setDucks] = useState([]);
+    const duckType = "brand name";
+    const [deleteDuck,setDeleteDuck] = useState("");
+
+    useEffect(()=> {
+    const loadDucks = async() => {
+        const response = await axios.get("https://ducks-server.onrender.com/api/ducks/", {
+            params: {type:duckType}
+        });
+        setDucks(response.data.slice(0,props.num));
+    };
+
+    loadDucks();
+},[])
+    
+    const openAddDialog = () => {
+        setShowAddDialog(true);
+    }
+    const closeAddDialog = () => {
+        setShowAddDialog(false);
+    }
+    const openDeleteDialog = () => {
+        setShowDeleteDialog(true);
+    }
+    const closeDeleteDialog = () => {
+        setShowDeleteDialog(false);
+    }
+    const updateDucks = (duck) => {
+        //Give a list, break up the list, then add to the list
+        setDucks((ducks)=>[...ducks,duck]);
+    }
+
     return (
+        <>
+            <button id="duck-button" onClick={openAddDialog}>Click here to add a duck!</button>
+            {showAddDialog?(<AddDuck 
+                                closeAddDialog={closeAddDialog} 
+                                updateDucks/> ): ("")}
+            
+            {showDeleteDialog?(<RemoveDuck
+                                    _id={deleteDuck._id}
+                                    closeDeleteDialog={closeDeleteDialog}/> ): ("")}
+
         <main id="brandducks-main" className="columns">
-            {ducks.map((ducks) => (
+            {ducks.map((duck) => (
                 <section className="brand-ducks">
-                <h3>{ducks.name}</h3>
-                <img src={ducks.img}/>
-                <Link to={ducks.link}>{ducks.name}</Link>
+                <h3>{duck.name}</h3>
+                <img src={`https://ducks-server.onrender.com/${duck.img}`}/>
+                <Link to={`/Duckpage/${duck._id}`} state={{duck}}>{duck.name}</Link>
+                <button id="delete-button" type="button" onClick={()=>{setDeleteDuck(duck); openDeleteDialog();}}>X</button>
             </section>
             ))}
         </main>
+
+        </>
     ) 
 }
 
